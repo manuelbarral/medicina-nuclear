@@ -1,0 +1,13 @@
+.carousel {
+	margin-bottom: 10px;
+}
+
+.carousel img {
+	width: 100%;
+}
+
+.carousel .caption {
+	color: #ffffff;
+	font-size: 1.5rem;
+	top: 0;
+}

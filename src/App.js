@@ -1,9 +1,11 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Menu from './components/Menu/Menu';
+import SectionInfo from './components/SectionInfo/SectionInfo';
 import Footer from './components/Footer/Footer';
 
 import classes from './App.module.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
 	return (
@@ -14,6 +16,7 @@ const App = () => {
 				</Grid>
 			</Grid>
 			<Grid item xs={12}>
+				<SectionInfo />
 				<Footer />
 			</Grid>
 		</div>

@@ -14,12 +14,12 @@ const Contact = () => {
 				</header>
 				<section>
 					<div>
-						<h4>Clínica Pueyrredón</h4>
-						<h5>(0223) 499-2400</h5>
+						<h5>Clínica Pueyrredón</h5>
+						<p>(0223) 499-2400 - int 373</p>
 					</div>
 					<div>
-						<h4>Clínica 25 de Mayo</h4>
-						<h5>(0223) 499-4000</h5>
+						<h5>Clínica 25 de Mayo</h5>
+						<p>(0223) 499-4000 - int 373</p>
 					</div>
 				</section>
 			</div>
@@ -29,12 +29,12 @@ const Contact = () => {
 				</header>
 				<section>
 					<div>
-						<h4>Clínica Pueyrredón</h4>
-						<h5>Jujuy 2176, Mar del Plata, Buenos Aires</h5>
+						<h5>Clínica Pueyrredón</h5>
+						<p>Jujuy 2176, Mar del Plata, Buenos Aires</p>
 					</div>
 					<div>
-						<h4>Clínica 25 de Mayo</h4>
-						<h5>25 De Mayo 3542/58, Mar del Plata, Buenos Aires</h5>
+						<h5>Clínica 25 de Mayo</h5>
+						<p>25 De Mayo 3542/58, Mar del Plata, Buenos Aires</p>
 					</div>
 				</section>
 			</div>
@@ -44,12 +44,12 @@ const Contact = () => {
 				</header>
 				<section>
 					<div>
-						<h4>Clínica Pueyrredón</h4>
-						<h5>mnpuey@clinicapueyrredon.com</h5>
+						<h5>Clínica Pueyrredón</h5>
+						<p>mnpuey@clinicapueyrredon.com</p>
 					</div>
 					<div>
-						<h4>Clínica 25 de Mayo</h4>
-						<h5>mn25@clinica25demayo.com</h5>
+						<h5>Clínica 25 de Mayo</h5>
+						<p>mn25@clinica25demayo.com.ar</p>
 					</div>
 				</section>
 			</div>

@@ -6,10 +6,11 @@
 	text-align: center;
 	background-color: #005480;
 	color: #ffffff;
-	padding-top: 10px;
+	padding: 10px;
+	font-size: 0.8rem;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
 	.card {
 		flex-direction: column;
 	}

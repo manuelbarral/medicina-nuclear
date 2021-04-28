@@ -67,7 +67,7 @@ const SimpleTabs = () => {
 					centered={true}
 					indicatorColor='primary'>
 					<Tab label='Inicio' {...a11yProps(0)} />
-					<Tab label='Servicios' {...a11yProps(1)} />
+					<Tab label='Prácticas' {...a11yProps(1)} />
 					<Tab label='Contacto' {...a11yProps(2)} />
 				</Tabs>
 			</AppBar>
