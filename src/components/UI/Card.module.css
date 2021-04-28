@@ -1,0 +1,16 @@
+.card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	text-align: center;
+	background-color: #005480;
+	color: #ffffff;
+	padding-top: 10px;
+}
+
+@media (max-width: 425px) {
+	.card {
+		flex-direction: column;
+	}
+}
