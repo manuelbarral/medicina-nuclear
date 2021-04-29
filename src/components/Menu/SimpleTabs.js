@@ -1,6 +1,4 @@
 import {React, useState} from 'react';
-import SwipeableViews from 'react-swipeable-views';
-import {useTheme} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import {makeStyles} from '@material-ui/core/styles';
 import {AppBar, Tabs, Tab, Box} from '@material-ui/core';
@@ -57,15 +55,10 @@ const useStyles = makeStyles((theme) => ({
 
 const SimpleTabs = () => {
 	const styles = useStyles();
-	const theme = useTheme();
 	const [value, setValue] = useState(0);
 
 	const changeHandler = (event, newValue) => {
 		setValue(newValue);
-	};
-
-	const handleChangeIndex = (index) => {
-		setValue(index);
 	};
 
 	return (
@@ -84,23 +77,18 @@ const SimpleTabs = () => {
 					<Tab label='Preguntas frecuentes' {...a11yProps(3)} />
 				</Tabs>
 			</AppBar>
-			<SwipeableViews
-				axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-				index={value}
-				onChangeIndex={handleChangeIndex}>
-				<TabPanel value={value} index={0} dir={theme.direction}>
-					<Wellcome />
-				</TabPanel>
-				<TabPanel value={value} index={1} dir={theme.direction}>
-					<Service />
-				</TabPanel>
-				<TabPanel value={value} index={2} dir={theme.direction}>
-					<Contact />
-				</TabPanel>
-				<TabPanel value={value} index={3} dir={theme.direction}>
-					<Questions />
-				</TabPanel>
-			</SwipeableViews>
+			<TabPanel value={value} index={0}>
+				<Wellcome />
+			</TabPanel>
+			<TabPanel value={value} index={1}>
+				<Service />
+			</TabPanel>
+			<TabPanel value={value} index={2}>
+				<Contact />
+			</TabPanel>
+			<TabPanel value={value} index={3}>
+				<Questions />
+			</TabPanel>
 		</div>
 	);
 };
