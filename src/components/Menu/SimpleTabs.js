@@ -1,11 +1,13 @@
-import {React, Fragment, useState} from 'react';
+import {React, useState} from 'react';
 import SwipeableViews from 'react-swipeable-views';
 import {useTheme} from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
+import {makeStyles} from '@material-ui/core/styles';
 import {AppBar, Tabs, Tab, Box} from '@material-ui/core';
 
 import Wellcome from '../Wellcome/Wellcome';
 import Service from '../ServiceComp/Service';
+import Questions from '../Questions/Questions';
 import Contact from '../Contact/Contact';
 
 const appbar = {
@@ -45,7 +47,16 @@ const a11yProps = (index) => {
 	};
 };
 
+const useStyles = makeStyles((theme) => ({
+	root: {
+		flexGrow: 1,
+		width: '100%',
+		backgroundColor: theme.palette.background.paper,
+	},
+}));
+
 const SimpleTabs = () => {
+	const styles = useStyles();
 	const theme = useTheme();
 	const [value, setValue] = useState(0);
 
@@ -58,17 +69,19 @@ const SimpleTabs = () => {
 	};
 
 	return (
-		<Fragment>
+		<div className={styles.root}>
 			<AppBar position='static' style={appbar}>
 				<Tabs
 					value={value}
 					onChange={changeHandler}
 					aria-label='simple tabs example'
-					centered={true}
-					indicatorColor='primary'>
+					indicatorColor='primary'
+					scrollButtons='on'
+					variant='scrollable'>
 					<Tab label='Inicio' {...a11yProps(0)} />
 					<Tab label='Prácticas' {...a11yProps(1)} />
 					<Tab label='Contacto' {...a11yProps(2)} />
+					<Tab label='Preguntas frecuentes' {...a11yProps(3)} />
 				</Tabs>
 			</AppBar>
 			<SwipeableViews
@@ -84,8 +97,11 @@ const SimpleTabs = () => {
 				<TabPanel value={value} index={2} dir={theme.direction}>
 					<Contact />
 				</TabPanel>
+				<TabPanel value={value} index={3} dir={theme.direction}>
+					<Questions />
+				</TabPanel>
 			</SwipeableViews>
-		</Fragment>
+		</div>
 	);
 };
 

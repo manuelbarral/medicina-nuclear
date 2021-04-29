@@ -11,7 +11,11 @@ const SectionInfo = () => {
 					<h5>SOBRE NOSOTROS</h5>
 				</header>
 				<section>
-					<p>Un poco de historia</p>
+					<p>
+						Somos el servicio de Medicina Nuclear de la Clínica
+						Pueyrredón y Clínica 25 de Mayo de la ciudad de Mar del
+						Plata.
+					</p>
 				</section>
 			</div>
 			<div>

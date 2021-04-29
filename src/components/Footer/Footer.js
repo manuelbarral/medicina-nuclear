@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<div className={classes.footer}>
 			<h5 className={classes.text}>
-				© Servicio de Medicina Nuclear - Silvia Lockhart
+				© Servicio de Medicina Nuclear - Dra. Silvia Lockhart
 			</h5>
 		</div>
 	);
