@@ -202,8 +202,72 @@ const Questions = () => {
 						</li>
 						<li>
 							<Typography variant='body1'>
-								Si es madre que está amamantado, debe suspender la
+								Si es madre que está amamantando, debe suspender la
 								lactancia por 24hs.
+							</Typography>
+						</li>
+					</ul>
+				</AccordionDetails>
+			</Accordion>
+			<Accordion>
+				<AccordionSummary
+					expandIcon={<ExpandMoreIcon />}
+					aria-controls='panel3a-content'
+					id='panel3a-header'>
+					<Typography className={classes.font}>
+						Horario de atención
+					</Typography>
+				</AccordionSummary>
+				<AccordionDetails>
+					<ul>
+						<li>
+							<Typography variant='body1'>
+								Clínica Pueyrredon:
+							</Typography>
+							<Typography variant='body2'>
+								El servicio trabaja de lunes a viernes de 08:00 a
+								17:00 hs.
+							</Typography>
+						</li>
+						<li>
+							<Typography variant='body1'>
+								Clínica 25 de Mayo:
+							</Typography>
+							<Typography variant='body2'>
+								El servicio trabaja de lunes a viernes de 08:00 a
+								16:00 hs.
+							</Typography>
+						</li>
+					</ul>
+				</AccordionDetails>
+			</Accordion>
+			<Accordion>
+				<AccordionSummary
+					expandIcon={<ExpandMoreIcon />}
+					aria-controls='panel3a-content'
+					id='panel3a-header'>
+					<Typography className={classes.font}>
+						Retirar informes
+					</Typography>
+				</AccordionSummary>
+				<AccordionDetails>
+					<ul>
+						<li>
+							<Typography variant='body1'>
+								Clínica Pueyrredon:
+							</Typography>
+							<Typography variant='body2'>
+								Podrá retirar personalmente su informe de lunes a
+								viernes de 08:00 a 16:30 hs.
+							</Typography>
+						</li>
+						<li>
+							<Typography variant='body1'>
+								Clínica 25 de Mayo:
+							</Typography>
+							<Typography variant='body2'>
+								Podrá retirar personalmente su informe de lunes a
+								viernes de 08:00 a 15:30 hs.
 							</Typography>
 						</li>
 					</ul>
