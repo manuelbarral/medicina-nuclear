@@ -69,8 +69,6 @@ const Service = () => {
 				aria-label='Vertical tabs example'
 				className={classes.tabs}>
 				<Tab label='SPECT' {...a11yProps(0)} />
-				<Tab label='PET/CT' {...a11yProps(1)} />
-				<Tab label='PET/MR' {...a11yProps(2)} />
 			</Tabs>
 			<TabPanel value={value} index={0} className={classes.tabpanel}>
 				<h5>SPECT</h5>
@@ -100,12 +98,6 @@ const Service = () => {
 					de imágenes a partir de los datos obtenidos por la cámara o
 					el escáner.
 				</p>
-			</TabPanel>
-			<TabPanel value={value} index={1}>
-				<h5>PET/CT</h5>
-			</TabPanel>
-			<TabPanel value={value} index={2}>
-				<h5>PET/MR</h5>
 			</TabPanel>
 		</div>
 	);
