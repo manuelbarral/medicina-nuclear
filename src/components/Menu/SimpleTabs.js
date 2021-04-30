@@ -4,7 +4,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import {AppBar, Tabs, Tab, Box} from '@material-ui/core';
 
 import Wellcome from '../Wellcome/Wellcome';
-import Service from '../ServiceComp/Service';
+import OurPractices from '../Practices/Practices';
 import Questions from '../Questions/Questions';
 import Contact from '../Contact/Contact';
 
@@ -81,7 +81,7 @@ const SimpleTabs = () => {
 				<Wellcome />
 			</TabPanel>
 			<TabPanel value={value} index={1}>
-				<Service />
+				<OurPractices />
 			</TabPanel>
 			<TabPanel value={value} index={2}>
 				<Contact />

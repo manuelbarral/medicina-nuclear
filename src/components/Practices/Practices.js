@@ -47,10 +47,11 @@ const useStyles = makeStyles((theme) => ({
 	},
 	tabpanel: {
 		width: '75%',
+		overflowY: 'auto',
 	},
 }));
 
-const Service = () => {
+const OurPractices = () => {
 	const classes = useStyles();
 	const [value, setValue] = useState(0);
 
@@ -103,4 +104,4 @@ const Service = () => {
 	);
 };
 
-export default Service;
+export default OurPractices;
