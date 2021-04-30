@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	margin: 0 20px;
+}
+
+.title {
+	font-size: 2rem;
+	color: #005480;
+}
+
+@media (max-width: 600px) {
+	.container {
+		justify-content: space-around;
+	}
+
+	.title {
+		margin: 15px 0;
+		font-size: 0.9rem;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+	.title {
+		margin: 15px 0;
+		font-size: 1.2rem;
+	}
+}

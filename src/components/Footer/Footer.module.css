@@ -14,3 +14,9 @@
 	margin: 0 0 10px 20px;
 	font-size: 0.8rem;
 }
+
+@media (min-width: 0px) and (max-width: 600px) {
+	.footer .text {
+		margin: 0 0 10px 10px;
+	}
+}

@@ -32,7 +32,7 @@ const CarouselImage = () => {
 					alt={images[0].title}
 				/>
 				<Carousel.Caption className={classes.caption}>
-					<h2>Clínica Pueyrredón</h2>
+					<h2 className={classes.title}>Clínica Pueyrredón</h2>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
@@ -42,7 +42,7 @@ const CarouselImage = () => {
 					alt={images[1].title}
 				/>
 				<Carousel.Caption className={classes.caption}>
-					<h2>Clínica 25 de Mayo</h2>
+					<h2 className={classes.title}>Clínica 25 de Mayo</h2>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
@@ -52,7 +52,7 @@ const CarouselImage = () => {
 					alt={images[2].title}
 				/>
 				<Carousel.Caption className={classes.caption}>
-					<h2>Nuestros profesionales</h2>
+					<h2 className={classes.title}>Nuestros profesionales</h2>
 				</Carousel.Caption>
 			</Carousel.Item>
 		</Carousel>

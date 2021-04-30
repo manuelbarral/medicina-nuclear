@@ -14,7 +14,7 @@ const data = [
 		phone: '(0223) 499-4000 - INTERNO 373',
 		address:
 			'25 de Mayo 3542/58, Mar del Plata, Buenos Aires, Argentina',
-		email: 'mn25y@clinica25demayo.com.ar',
+		email: 'mn25@clinica25demayo.com.ar',
 	},
 ];
 

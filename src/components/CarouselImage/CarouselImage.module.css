@@ -1,5 +1,5 @@
 .carousel {
-	margin-bottom: 10px;
+	margin: 0;
 }
 
 .carousel img {
@@ -7,7 +7,12 @@
 }
 
 .carousel .caption {
-	color: #ffffff;
-	font-size: 1.5rem;
 	top: 0;
+}
+
+@media (max-width: 600px) {
+	.carousel .title {
+		color: #ffffff;
+		font-size: 0.9rem;
+	}
 }
