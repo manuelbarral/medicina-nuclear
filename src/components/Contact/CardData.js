@@ -1,7 +1,6 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import {Card, CardContent, Typography} from '@material-ui/core';
-
 import PhoneIcon from '@material-ui/icons/Phone';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';

@@ -1,46 +1,34 @@
-import {React, useState} from 'react';
-import Grid from '@material-ui/core/Grid';
-import Title from './components/Title/Title';
-import Menu from './components/Menu/Menu';
-import SectionInfo from './components/SectionInfo/SectionInfo';
-import Footer from './components/Footer/Footer';
-import Whattsapp from './components/Whattsapp/Whattsapp';
-import {Roller} from 'react-spinners-css';
-
+import {React, lazy} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import classes from './App.module.css';
+import Menu from './components/Menu/Menu';
 
-const App = () => {
-	const [loading, setLoading] = useState(true);
+const Grid = lazy(() => import('@material-ui/core/Grid'));
+const Title = lazy(() => import('./components/Title/Title'));
+const SectionInfo = lazy(() =>
+	import('./components/SectionInfo/SectionInfo')
+);
+const Footer = lazy(() => import('./components/Footer/Footer'));
+const Whattsapp = lazy(() =>
+	import('./components/Whattsapp/Whattsapp')
+);
 
-	setTimeout(() => {
-		setLoading(false);
-	}, 1000);
-
+const App = (props) => {
 	return (
-		<div className={classes.app}>
-			{loading ? (
-				<Roller
-					load={loading}
-					className={classes.spinner}
-					color='#67B426'
-				/>
-			) : (
-				<div className={classes.root}>
-					<Grid container className={classes.container}>
-						<Grid item xs={12}>
-							<Title />
-							<Menu />
-						</Grid>
-					</Grid>
+		<div className={`${classes.app} ${props.className}`}>
+			<div className={classes.root}>
+				<Grid container className={classes.container}>
 					<Grid item xs={12}>
-						<SectionInfo />
-						<Whattsapp />
-						<Footer />
+						<Title />
+						<Menu />
 					</Grid>
-				</div>
-			)}
+				</Grid>
+				<Grid item xs={12}>
+					<SectionInfo />
+					<Whattsapp />
+					<Footer />
+				</Grid>
+			</div>
 		</div>
 	);
 };

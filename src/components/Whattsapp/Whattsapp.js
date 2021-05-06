@@ -1,8 +1,10 @@
-import React from 'react';
+import {React, lazy} from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import Fab from '@material-ui/core/Fab';
+
+const WhatsAppIcon = lazy(() =>
+	import('@material-ui/icons/WhatsApp')
+);
 
 const link =
 	'https://wa.me/5492235976016?text=Quisiera%20pedir%20un%20turno';

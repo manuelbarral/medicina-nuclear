@@ -1,7 +1,6 @@
 import React from 'react';
-import Card from '../UI/Card';
-
 import classes from './SectionInfo.module.css';
+import Card from '../UI/Card';
 
 const text = [
 	{

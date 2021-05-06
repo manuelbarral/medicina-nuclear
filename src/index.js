@@ -1,10 +1,23 @@
-import React from 'react';
+import {React, lazy, Suspense} from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './index.css';
+import {Ring} from 'react-spinners-css';
+import classes from './index.module.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const App = lazy(() => {
+	return Promise.all([
+		import('./App'),
+		new Promise((resolve) => setTimeout(resolve, 300)),
+	]).then(([moduleExports]) => moduleExports);
+});
+
+ReactDOM.render(
+	<Suspense
+		fallback={<Ring color='#67B426' className={classes.spinner} />}>
+		<App className={classes.app} />
+	</Suspense>,
+	document.getElementById('root')
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

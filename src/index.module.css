@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+}
+
+.app {
+	position: relative;
+}
+
+.spinner {
+	position: absolute;
+	height: 100%;
+	top: 45%;
+	left: 45%;
+	transform: translate(-45%, -45%);
+}

@@ -4,12 +4,6 @@
 	position: relative;
 }
 
-.spinner {
-	position: absolute;
-	top: 45%;
-	left: 45%;
-}
-
 .root {
 	display: flex;
 	flex-direction: column;
